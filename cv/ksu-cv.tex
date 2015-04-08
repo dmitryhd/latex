@@ -1,0 +1,158 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Curriculum Vitae
+% LaTeX Template
+% Version 1.0 (18/7/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Stefano (http://stefano.italians.nl/)
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% The main font used in this template, Adobe Garamond Pro, does not 
+% come with Windows by default. You will need to download it in
+% order to get an output as in the preview PDF. Otherwise, change this 
+% font to one that does come with Windows or comment out the font line 
+% to use the default LaTeX font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, oneside, final]{scrartcl} % Paper options using the scrartcl class
+
+\usepackage{scrpage2} % Provides headers and footers configuration
+\usepackage{titlesec} % Allows creating custom \section's
+\usepackage{marvosym} % Allows the use of symbols
+\usepackage{tabularx,colortbl} % Advanced table configurations
+\usepackage{fontspec} % Allows font customization
+\usepackage{color}
+\usepackage[usenames,dvipsnames]{xcolor}
+
+\usepackage{polyglossia}
+\setmainlanguage{russian} 
+\setotherlanguage{english}
+\newfontfamily\russianfont[Script=Cyrillic]{Tahoma}
+
+\defaultfontfeatures{Mapping=tex-text}
+
+\titleformat{\section}{\large\scshape\raggedright}{}{0em}{}[\titlerule] % Section formatting
+
+\pagestyle{scrheadings} % Print the headers and footers on all pages
+
+\addtolength{\voffset}{-2.3cm} % Adjust the vertical offset - less whitespace at the top of the page
+\addtolength{\textheight}{5.7cm} % Adjust the text height - less whitespace at the bottom of the page
+
+%\definecolor{light-gray}{gray}{0.95}
+\newcommand{\gray}{\rowcolor[gray]{.93}} % Custom highlighting for the work experience and education sections
+
+%----------------------------------------------------------------------------------------
+% FOOTER SECTION
+%----------------------------------------------------------------------------------------
+
+\renewcommand{\headfont}{\normalfont\rmfamily\scshape} % Font settings for footer
+
+\cofoot{
+\addfontfeature{LetterSpace=10.0}\fontsize{12.5}{12}\selectfont % Letter spacing and font size
+
+
+{\Letter} kseniya.terekhina@phystech.edu \ {\Large\Telefon} (916) 467-78-86 % Your email address and phone number
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\begin{center} % Center everything in the document
+
+%----------------------------------------------------------------------------------------
+% ÊHEADER SECTION
+%----------------------------------------------------------------------------------------
+
+{\addfontfeature{LetterSpace=5.0}\fontsize{24}{24}\selectfont\scshape Ксения Терехина} % Your name at the top
+
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{\textbf{\textcolor{BlueViolet}{Образование}}}
+
+\begin{tabularx}{0.99\linewidth}{cp{0.8\linewidth}l}
+\gray \textbf{2014 - 2016} & \textbf{Московский физико-технический институт (МФТИ ГУ)} {Магистр. Cистемный анализ и управление в больших системах} \\
+\gray & \quad \\
+\gray & \textbf{Российская академия народного хозяйства и государственной службы при Президенте РФ (РАНХиГС) } \\ 
+\gray & Магистр. Финансы и Экономика \\
+ 
+\end{tabularx}
+
+\vspace{10pt}
+\begin{tabularx}{0.99\linewidth}{cp{0.8\linewidth}l}
+\gray \textbf{2010 - 2014} & \textbf{Московский физико-технический институт (МФТИ ГУ)} {Бакалавр. Cистемный анализ и управление } \\
+\gray  & \quad \\
+\gray  & \textbf{Российская академия народного хозяйства и государственной службы при Президенте РФ (РАНХиГС) } \\
+\gray  & {Бакалавр. Экономика}\\
+ 
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{\textbf{\textcolor{BlueViolet}{Опыт работы}}}
+\begin{tabularx}{0.99\linewidth}{cp{0.8\linewidth}l}
+\gray \textbf{2014 - н/вр} & \textbf{Институт прикладных экономических исследований при РАНХиГС} \\
+\gray & Младший научный сотрудник \\
+%& Extra information about degree
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+
+
+\section{\textbf{\textcolor{BlueViolet}{Навыки}}}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Языки & Английский (Технический)\\ & Испанский (Базовые знания)\\
+Языки програмирования & Python, Matlab/Octave, Wolfram Mathematica \\
+Статические пакеты  & Stata, Eviews \\
+Прикладные программы & MS Word, Excel, OS Linux, Git, Vim, LaTeX \\
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+
+\section{\textbf{\textcolor{BlueViolet}{Участие в конференциях}}}
+\begin{minipage}{.99\linewidth}
+\begin{itemize}
+\item INFOS2014, Польша, Сентябрь 2014 
+\item 57-я научная конференция МФТИ, Москва, Ноябрь 2014 
+\item Гайдаровский форум 2015 "Современная экономика: теория, политика, инновации глазами молодых ученых", Москва, Январь 2015 
+\end{itemize}
+
+\section{\textbf{\textcolor{BlueViolet}{Публикации}}}
+\begin{itemize}
+\item  ITHEA® 2014, Rzeszow, Poland; Sofia, Bulgaria/ Transactions on Business and Engineering Intelligent Applications/ " Building Noise Immunity Models for GDP Forecast Based on Electrical Power Consumption" Ksenia Terekhina, Mikhail Alexandrov, Oleksiy Koshulko
+\end{itemize}
+
+\end{minipage}
+
+\section{\textbf{\textcolor{BlueViolet}{Сертификаты}}}
+
+\begin{tabular}{cp{11cm}p{1cm}}
+2013 & \textbf{Machine Learning by Andrew Ng} & Coursera  \\
+2014 & \textbf{Statistical Learning} & Stanford University  \\
+2015 & \textbf{Introduction to Computer Science and Programming Using Python} & Edx  \\
+
+\end{tabular}
+
+%---------------------------------------------------------------------------------
+
+\end{center}
+
+\end{document}
