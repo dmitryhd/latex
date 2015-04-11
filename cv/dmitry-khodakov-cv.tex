@@ -42,6 +42,9 @@
 {\Letter} dmitryhd@gmail.com \ {\Large\Telefon} (915) 219-219-8 % Your email address and phone number % TODO: fake number
 }
 \newcommand{\tabitem}{{\textbullet}~~}
+
+\usepackage{graphicx}
+\graphicspath{ {/} }
 %----------------------------------------------------------------------------------------
 
 \begin{document}
@@ -52,7 +55,11 @@
 % HEADER SECTION
 %----------------------------------------------------------------------------------------
 
-{\addfontfeature{LetterSpace=5.0}\fontsize{24}{24}\selectfont\scshape Dmitriy Khodakov} % Your name at the top
+\begin{tabularx}{0.99\linewidth}{m{10cm}m{4cm}}
+
+{\addfontfeature{LetterSpace=5.0}\fontsize{24}{24}\selectfont\scshape Dmitriy Khodakov} & % Your name at the top 
+\includegraphics[width=4cm]{dim-av.png} \\
+\end{tabularx}
 
 \section{\textbf{Education}}
 
@@ -67,8 +74,8 @@
 \section{\textbf{Experience}}
 \begin{tabularx}{0.99\linewidth}{p{2cm}p{11.8cm}}
 
-\multicolumn{2}{l}{\textbf{Orion - \textit{Lead Software Developer}}} \\
-03.2013 Present &
+\multicolumn{2}{l}{\textbf{Orion - \textit{Lead Software Developer - Python}}} \\
+03.2013 Present \rule{1.9cm}{.1pt} 2 years \newline 2 months &
     \tabitem Development of software monitoring and management system \newline
     \tabitem GPU cluster (Linux, Windows) \newline
     \tabitem Back-end on Python, data collection by SNMP/IPMI protocols \newline
@@ -77,8 +84,8 @@
     \tabitem Gui migrated to Flask\newline
     \tabitem TODO: write about deployment, RHEL, hardware \\ 
 & ~ \\
-\multicolumn{2}{l}{\textbf{Telum - Researcher/Software Engineer}} \\
- 08.2011 \newline 03.2013 &
+\multicolumn{2}{l}{\textbf{Telum - Researcher/Software Engineer - C++}} \\
+ 08.2011 03.2013 \rule{1.9cm}{.1pt} 1 year \newline 7 months &
     \tabitem Implementation of custom wireless MAC layer protocol in C++ \newline
     \tabitem Modelling and simulation of this protocol in NS3 \newline
     \tabitem About 200k lines of C++ code \newline
@@ -90,10 +97,10 @@
 
 \section{\textbf{Skills}}
 \begin{tabularx}{0.99\linewidth}{ p{2cm} p{11.8cm} }
-Languages & Python, C++/C, Javascipt, Bash, R \\
-Instrumts & Git, SVN, Mercurial, Jira, Redmine, Agile/Scrum, Vim, UML \\
-Academic & Theory of telecommunications, Machine learning, Architecture of programs \\
-Frameworks & Django, JQuery, NS3,  \\
+Languages & Python, Javascipt, C++/C, Bash, R \\
+Instrumets & Git, SVN, Mercurial, Jira, Redmine, Agile/Scrum, Vim, UML \\
+Academic & Theory of telecommunications, Machine learning, Software Architecture \\
+Frameworks & Django, JQuery, NS3 \\
 Speak & English (technical), Russian (mother language), Spanish (castellano) (basic)  \\
 OS & Linux system administration \\
 \end{tabularx}
