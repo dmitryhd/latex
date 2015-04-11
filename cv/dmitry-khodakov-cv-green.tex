@@ -21,7 +21,7 @@
 %\titleformat{\section}{\color{BrickRed}\large\scshape\raggedright}{}{0cm}{}[\titlerule] % Section formatting
 
 \titleformat{name=\section}[block]
-  {\color{BrickRed}\large\scshape\raggedright}
+  {\large\scshape\raggedright}
   {}
   {0pt}
   {\colorsection}
@@ -29,7 +29,7 @@
 \titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip}
 
 \newcommand{\colorsection}[1]{%
-  \colorbox{gray!15}{\parbox{\dimexpr\textwidth-2\fboxsep}{#1}}}
+  \colorbox{LimeGreen!30}{\parbox{\dimexpr\textwidth-2\fboxsep}{#1}}}
 
 \pagestyle{scrheadings} % Print the headers and footers on all pages
 \addtolength{\voffset}{-2.3cm} % Adjust the vertical offset - less whitespace at the top of the page
