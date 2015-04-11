@@ -20,18 +20,20 @@
 
 \titleformat{\section}{\color{BrickRed}\large\scshape\raggedright}{}{0cm}{}[\titlerule] % Section formatting
 
-\pagestyle{scrheadings} % Print the headers and footers on all pages
+%\titleformat{name=\section}[block]
+%  {\color{BrickRed}\large\scshape\raggedright}
+%  {}
+%  {0pt}
+%  {\colorsection}
+%  [\titlerule]
+%\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip}
 
+\newcommand{\colorsection}[1]{%
+  \colorbox{gray!15}{\parbox{\dimexpr\textwidth-2\fboxsep}{\thesection\ #1}}}
+\pagestyle{scrheadings} % Print the headers and footers on all pages
 \addtolength{\voffset}{-2.3cm} % Adjust the vertical offset - less whitespace at the top of the page
 \addtolength{\textheight}{5.7cm} % Adjust the text height - less whitespace at the bottom of the page
 
-\let\oldenumerate\enumerate
-\renewcommand{\enumerate}{
-  \oldenumerate
-  \setlength{\itemsep}{1pt}
-  \setlength{\parskip}{0pt}
-  \setlength{\parsep}{0pt}
-}
 % FOOTER SECTION
 %----------------------------------------------------------------------------------------
 
@@ -51,7 +53,6 @@
 
 \begin{center} % Center everything in the document
 
-%----------------------------------------------------------------------------------------
 % HEADER SECTION
 %----------------------------------------------------------------------------------------
 
